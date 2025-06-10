@@ -8,7 +8,7 @@ st.set_page_config(layout="wide")
 # Load data
 @st.cache_data
 def load_data():
-    url = "https://github.com/kwamearhinPORTFL/supermarket-dashboard/blob/main/supermarket_sales.csv"
+    url = "https://raw.githubusercontent.com/kwamearhinPORTFL/supermarket-dashboard/refs/heads/main/supermarket_sales.csv"
     return pd.read_csv(url)
 
 data = load_data()
